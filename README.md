@@ -39,7 +39,7 @@ Hand-Written-Digit-Recognition/
 - Dataset: MNIST (70,000 images)
 - Input Shape: 28x28 grayscale images
 - Output Classes: 10 (Digits 0–9)
-- Accuracy: ~98%
+- Accuracy: ~90%
 
 ---
 
