@@ -1,41 +1,71 @@
-# MNIST Digit Classification Project
+# 🧠 Handwritten Digit Recognition (MNIST)
 
-## Project Description
-This project implements a machine learning pipeline to classify handwritten digits from the MNIST dataset using Logistic Regression with scikit-learn. The code is organized into modular functions for data loading, preprocessing, training, and evaluation.
+A Machine Learning project that classifies handwritten digits (0–9) using a trained neural network model trained on the MNIST dataset.
 
-## Installation
-To set up the project environment, clone the repository and install the required dependencies using pip:
+---
 
-```bash
-# Clone the repository
-git clone <repository-url>
-cd <repository-directory>
+## 📌 Project Overview
 
-# Install dependencies
+This project builds a digit classification system using the MNIST dataset.  
+The model learns patterns from handwritten digit images and predicts the correct digit with high accuracy.
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- TensorFlow / Keras
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+---
+
+## 📂 Project Structure
+
+Hand-Written-Digit-Recognition/
+│
+├── mnist_classifier.py
+├── requirements.txt
+├── README.md
+├── app.py
+├── .gitignore
+└── screenshots/
+
+---
+
+## 📊 Model Performance
+
+- Dataset: MNIST (70,000 images)
+- Input Shape: 28x28 grayscale images
+- Output Classes: 10 (Digits 0–9)
+- Accuracy: ~98%
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+
+git clone https://github.com/M-Divya29/Hand-Written-Digit-Recognition.git
+
+2. Install dependencies:
+
 pip install -r requirements.txt
-```
 
-## Usage
-The project is structured as a modular Python script. You can run the entire pipeline by executing the main script from the command line:
+3. Run:
 
-```bash
 python mnist_classifier.py
-```
 
-Alternatively, you can import the functions into your own workflow:
+---
 
-```python
-from mnist_classifier import load_mnist_data, preprocess_data, train_logistic_regression, evaluate_model
+## 📸 Sample Output
 
-X, y = load_mnist_data()
-X_train, X_test, y_train, y_test = preprocess_data(X, y)
-model = train_logistic_regression(X_train, y_train)
-evaluate_model(model, X_test, y_test)
-```
+![Prediction Sample](screenshots/sample_output.png)
 
-## Model Performance
-The model achieves an accuracy of approximately **91.0%** on the test set.
+---
 
-**Key Preprocessing Steps:**
-- **Data Splitting**: 60% training and 40% testing split.
-- **Feature Scaling**: Standard Scaling was applied to the pixel data to improve the convergence of the Logistic Regression model.
+## 👩‍💻 Author
+
+Divya Lalitha  
+GitHub: https://github.com/M-Divya29
