@@ -2,6 +2,8 @@
 
 A real-time handwritten digit recognition web application built using a Convolutional Neural Network (CNN) trained on the MNIST dataset and deployed using Streamlit. 
 
+🚀 **Live App Link:** [Click here to try the app](https://unbalkingly-postlicentiate-willette.ngrok-free.dev/)
+
 🔗 **GitHub Repository:** [https://github.com/M-Divya29/Hand-Written-Digit-Recognition](https://github.com/M-Divya29/Hand-Written-Digit-Recognition)
 
 ---
@@ -55,18 +57,6 @@ Hand-Written-Digit-Recognition/
    ```bash
    streamlit run app.py
    ```
-
----
-
-## 🧠 Model Architecture
-
-The model is a Sequential CNN consisting of:
-- **Conv2D Layer**: 32 filters, 3x3 kernel, ReLU activation.
-- **MaxPooling Layer**: 2x2 pooling.
-- **Conv2D Layer**: 64 filters, 3x3 kernel, ReLU activation.
-- **Flatten Layer**: Converts 2D feature maps to 1D vector.
-- **Dense Layer**: 64 neurons, ReLU activation.
-- **Output Layer**: 10 neurons, Softmax activation.
 
 ---
 
