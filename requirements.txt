@@ -1,4 +1,6 @@
 streamlit
-scikit-learn
+streamlit-drawable-canvas
+tensorflow
+opencv-python-headless
 numpy
-Pillow
+scikit-learn
