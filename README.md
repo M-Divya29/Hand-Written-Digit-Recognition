@@ -1,51 +1,45 @@
-# 🧠 Handwritten Digit Recognition | Deep Learning Pipeline
+# ፁ Handwritten Digit Recognition Project
 
-![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python) ![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange?style=flat-square&logo=tensorflow) ![Streamlit](https://img.shields.io/badge/Deployment-Streamlit-FF4B4B?style=flat-square&logo=streamlit)
+Hi there! ፁ This is my first Deep Learning project where I built an app that can recognize numbers you draw on the screen!
 
-An end-to-end Computer Vision application leveraging **Convolutional Neural Networks (CNN)** to perform real-time optical character recognition on handwritten digits. 
-
-ጐ **Live Production Environment:** [Try the Demo](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
+ጐ **Try my app here:** [Live Demo Link](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
 
 ---
 
-## ፁ System Architecture
+## ፁ What does this app do?
+This is a simple and fun web app. You draw any number from **0 to 9** on a digital canvas, and my AI model will guess which number it is in real-time!
 
-1.  **Preprocessing Layer**: Real-time image acquisition $\rightarrow$ Grayscale Conversion $\rightarrow$ Bitwise Inversion $\rightarrow$ Resizing ($28 \times 28$ pixels) $\rightarrow$ Normalization ($[0,1]$).
-2.  **Model Layer**: Sequential CNN (Conv2D $\rightarrow$ MaxPool $\rightarrow$ Conv2D $\rightarrow$ MaxPool $\rightarrow$ Dense $\rightarrow$ Softmax).
-3.  **Deployment Layer**: Served via Streamlit Community Cloud with CI/CD integration.
+## ፁ How I built it
+1.  **Dataset**: I used the famous MNIST dataset (70,000 images of handwritten numbers).
+2.  **Model**: I built a **Convolutional Neural Network (CNN)** using TensorFlow and Keras.
+3.  **Web App**: I used **Streamlit** to create the user interface and the drawing canvas.
+4.  **Deployment**: I hosted the app on Streamlit Cloud so anyone can use it!
 
----
+## ፂ Tech Stack I Used
+- **Python** (Programming Language)
+- **TensorFlow/Keras** (For the AI Model)
+- **Streamlit** (For the Web Interface)
+- **OpenCV** (To process the drawings)
+- **NumPy** (For math operations)
 
-## ጐ Technical Challenges & Solutions
+## ፃ How to run it on your computer
+If you want to try this code on your own machine, follow these easy steps:
 
-- **Inverted Polarity**: MNIST data uses white digits on black backgrounds, while user drawings are often black on white. 
-  - *Solution*: Implemented a bitwise inversion (`255 - image`) in the preprocessing pipeline.
-- **Model Latency**: Loading deep learning models on every request slows down UX.
-  - *Solution*: Utilized Streamlit's `@st.cache_resource` to load the CNN model into memory once as a singleton.
-- **Input Scaling**: Hand-drawn digits vary in thickness and position.
-  - *Solution*: Used OpenCV interpolation (`INTER_AREA`) for high-quality resizing to $28 \times 28$ pixels.
-
----
-
-## 🚀 Future Roadmap
-
-- [ ] **Data Augmentation**: Incorporate rotation and shifting to improve model robustness.
-- [ ] **Mobile Support**: Optimize the drawing canvas for touch-screen devices.
-- [ ] **Multi-digit Recognition**: Extend the pipeline to recognize sequences of numbers using contour detection.
-
----
-
-## ፃ Local Development Setup
-
-```bash
-git clone https://github.com/M-Divya29/Hand-Written-Digit-Recognition.git
-cd Hand-Written-Digit-Recognition
-pip install -r requirements.txt
-streamlit run app.py
-```
+1.  **Clone this folder**:
+    ```bash
+    git clone https://github.com/M-Divya29/Hand-Written-Digit-Recognition.git
+    ```
+2.  **Install the needed libraries**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Start the app**:
+    ```bash
+    streamlit run app.py
+    ```
 
 ---
 
-## ፁ Author
-**Divya Lalitha** 
-[ፃ GitHub](https://github.com/M-Divya29) | [ጐ Portfolio Site](https://github.com/M-Divya29/Hand-Written-Digit-Recognition)
+## ፁ About Me
+**Divya Lalitha**
+Check out my other projects on [GitHub](https://github.com/M-Divya29)!
