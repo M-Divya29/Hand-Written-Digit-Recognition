@@ -1,14 +1,14 @@
-# ፁ Handwritten Digit Recognition | Deep Learning Pipeline
+# 🧠 Handwritten Digit Recognition | Deep Learning Pipeline
 
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python) ![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange?style=flat-square&logo=tensorflow) ![Streamlit](https://img.shields.io/badge/Deployment-Streamlit-FF4B4B?style=flat-square&logo=streamlit)
 
 An end-to-end Computer Vision application leveraging **Convolutional Neural Networks (CNN)** to perform real-time optical character recognition on handwritten digits.
 
-ጐ **Live Production Environment:** [Try the Demo](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
+🚀 **Live Production Environment:** [Try the Demo](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
 
 ---
 
-## ፁ System Architecture
+## 📋 System Architecture
 
 1.  **Preprocessing Layer**: Real-time image acquisition → Grayscale Conversion → Bitwise Inversion → Resizing (28x28 pixels) → Normalization ([0,1]).
 2.  **Model Layer**: Sequential CNN (Conv2D → MaxPool → Conv2D → MaxPool → Dense → Softmax).
@@ -16,7 +16,7 @@ An end-to-end Computer Vision application leveraging **Convolutional Neural Netw
 
 ---
 
-## ፁ Technical Features
+## 🛠️ Technical Features
 
 - **Robust Inference Engine**: Powered by a CNN model trained on the MNIST dataset, achieving a validation accuracy of **~98%**.
 - **Interactive UX**: Custom-built drawing canvas using `streamlit-drawable-canvas` for fluid user interaction.
@@ -24,7 +24,7 @@ An end-to-end Computer Vision application leveraging **Convolutional Neural Netw
 
 ---
 
-## ፁ Repository Structure
+## 📂 Repository Structure
 
 ```text
 Hand-Written-Digit-Recognition/
@@ -37,7 +37,7 @@ Hand-Written-Digit-Recognition/
 
 ---
 
-## ፁ Local Development Setup
+## ⚙️ Local Development Setup
 
 ```bash
 git clone https://github.com/M-Divya29/Hand-Written-Digit-Recognition.git
@@ -48,6 +48,6 @@ streamlit run app.py
 
 ---
 
-## ፁ Author
+## 👩‍💻 Author
 **Divya Lalitha**
 [GitHub](https://github.com/M-Divya29)
