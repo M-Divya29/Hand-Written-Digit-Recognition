@@ -1,82 +1,69 @@
-# 🧠 Handwritten Digit Recognition using CNN
+# 🧠 Handwritten Digit Recognition | Deep Learning Pipeline
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python) ![Streamlit](https://img.shields.io/badge/Streamlit-1.24-FF4B4B?style=for-the-badge&logo=streamlit) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python) ![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange?style=flat-square&logo=tensorflow) ![Streamlit](https://img.shields.io/badge/Deployment-Streamlit-FF4B4B?style=flat-square&logo=streamlit)
 
-A real-time handwritten digit recognition web application built using a Convolutional Neural Network (CNN) trained on the MNIST dataset and deployed using Streamlit.
+An end-to-end Computer Vision application leveraging **Convolutional Neural Networks (CNN)** to perform real-time optical character recognition on handwritten digits. This project demonstrates the integration of deep learning models with responsive web interfaces for interactive inference.
 
-🚀 **Live App Link:** [Click here to try the app](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
-
-🔗 **GitHub Repository:** [https://github.com/M-Divya29/Hand-Written-Digit-Recognition](https://github.com/M-Divya29/Hand-Written-Digit-Recognition)
+ጐ **Live Production Environment:** [Try the Demo](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
 
 ---
 
-## 📸 Application Preview
+## ፁ System Architecture
 
-| Drawing Canvas | Real-time Prediction |
-|---|---|
-| ![Canvas](screenshots/digit_7.png) | ![Prediction](screenshots/sample_output.png) |
+The application follows a decoupled architecture separating the inference engine from the presentation layer:
 
-### 🔢 Sample Digits from Dataset
-
-| 0 | 1 | 2 | 3 | 4 |
-|---|---|---|---|---|
-| ![](screenshots/digit_0.png) | ![](screenshots/digit_1.png) | ![](screenshots/digit_2.png) | ![](screenshots/digit_3.png) | ![](screenshots/digit_4.png) |
+1.  **Preprocessing Layer**: Real-time image acquisition $\rightarrow$ Grayscale Conversion $\rightarrow$ Bitwise Inversion $\rightarrow$ Resizing ($28 \times 28$ pixels) $\rightarrow$ Normalization ($[0,1]$).
+2.  **Model Layer**: A sequential CNN architecture utilizing `Conv2D` layers for spatial feature extraction and `Dense` layers for categorical classification.
+3.  **Deployment Layer**: Served via Streamlit Community Cloud with CI/CD integration for seamless updates.
 
 ---
 
-## 🚀 Key Features
+## ጐ Technical Features
 
-- ✏️ **Interactive Canvas**: Draw digits (0-9) directly in your browser with real-time feedback.
-- 🤖 **CNN Model**: Advanced Deep Learning architecture (Conv2D, MaxPooling) achieving ~98% accuracy.
-- 📊 **Confidence Score**: Dynamic probability display for the predicted digit.
-- 🛠️ **Preprocessing Pipeline**: Automated resizing (28x28), grayscale conversion, and pixel normalization.
-
----
-
-## 🛠 Tech Stack
-
-- **Deep Learning**: TensorFlow, Keras
-- **Frontend/Web**: Streamlit
-- **Computer Vision**: OpenCV (cv2), Pillow
-- **Mathematical Analysis**: NumPy
-- **Model Training**: Scikit-learn
+- **Robust Inference Engine**: Powered by a CNN model trained on the MNIST dataset, achieving a validation accuracy of **~98%**.
+- **Interactive UX**: Custom-built drawing canvas using `streamlit-drawable-canvas` for fluid user interaction.
+- **Optimized Performance**: Singleton model loading using `@st.cache_resource` to minimize memory overhead and latency.
 
 ---
 
-## 📂 Project Structure
+## ፂ Repository Structure
 
 ```text
-Hand-Written-Digit-Recognition/
-│
-├── app.py              # Main Streamlit application script
-├── digit_model.h5      # Pre-trained CNN model weights
-├── requirements.txt    # List of library dependencies
-├── README.md           # Project documentation
-└── screenshots/        # UI previews and dataset samples
+┣━━ app.py               # Application entry point & UI logic
+┣━━ digit_model.h5       # Pre-trained CNN weights (HDF5 format)
+┣━━ requirements.txt     # Deterministic dependency manifest
+┣━━ README.md            # Technical documentation
+┗━━ screenshots/         # Asset directory for documentation
 ```
 
 ---
 
-## ⚙️ Local Installation & Usage
+## ፃ Local Development Setup
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/M-Divya29/Hand-Written-Digit-Recognition.git
-   cd Hand-Written-Digit-Recognition
-   ```
+### Prerequisites
+- Python 3.9+
+- Virtual Environment tool (`venv` or `conda`)
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Launch the application:**
-   ```bash
-   streamlit run app.py
-   ```
+### Installation
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/M-Divya29/Hand-Written-Digit-Recognition.git
+    cd Hand-Written-Digit-Recognition
+    ```
+2.  **Environment Configuration**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Windows: venv\Scripts\activate
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    ```
+3.  **Run Application**
+    ```bash
+    streamlit run app.py
+    ```
 
 ---
 
-## 👩‍💻 Author
-**Divya Lalitha**
-[GitHub Profile](https://github.com/M-Divya29)
+## ፁ Author
+**Divya Lalitha** 
+[ፃ GitHub](https://github.com/M-Divya29) | [ጐ Portfolio Site](https://github.com/M-Divya29/Hand-Written-Digit-Recognition)
