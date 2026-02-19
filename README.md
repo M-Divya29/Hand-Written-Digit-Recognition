@@ -1,5 +1,7 @@
 # 🧠 Handwritten Digit Recognition using CNN
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python) ![Streamlit](https://img.shields.io/badge/Streamlit-1.24-FF4B4B?style=for-the-badge&logo=streamlit) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 A real-time handwritten digit recognition web application built using a Convolutional Neural Network (CNN) trained on the MNIST dataset and deployed using Streamlit.
 
 🚀 **Live App Link:** [Click here to try the app](https://hand-written-digit-recognition-fdgurtwllfe6lizudj6eip.streamlit.app/)
@@ -8,15 +10,17 @@ A real-time handwritten digit recognition web application built using a Convolut
 
 ---
 
-## 📸 Sample Digits from Dataset
+## 📸 Application Preview
+
+| Drawing Canvas | Real-time Prediction |
+|---|---|
+| ![Canvas](screenshots/digit_7.png) | ![Prediction](screenshots/sample_output.png) |
+
+### 🔢 Sample Digits from Dataset
 
 | 0 | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | ![](screenshots/digit_0.png) | ![](screenshots/digit_1.png) | ![](screenshots/digit_2.png) | ![](screenshots/digit_3.png) | ![](screenshots/digit_4.png) |
-
-| 5 | 6 | 7 | 8 | 9 |
-|---|---|---|---|---|
-| ![](screenshots/digit_5.png) | ![](screenshots/digit_6.png) | ![](screenshots/digit_7.png) | ![](screenshots/digit_8.png) | ![](screenshots/digit_9.png) |
 
 ---
 
@@ -61,18 +65,12 @@ Hand-Written-Digit-Recognition/
    cd Hand-Written-Digit-Recognition
    ```
 
-2. **Setup Virtual Environment (Optional but recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Launch the application:**
+3. **Launch the application:**
    ```bash
    streamlit run app.py
    ```
